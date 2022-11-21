@@ -146,6 +146,22 @@ section.six-section div h2{
     padding: 20px 0px;
 }
 
+/* FOOTER */
+footer{
+    background-color: rgb(9, 9, 9);
+    min-height: calc(100vw / 3);
+    padding: 40px 0px 20px 0;
+}
+
+footer div.container1000{
+    height: 350px;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+}
+
 /* REGOLE DEBUG */
 .container1000,
 .container800,
@@ -160,7 +176,7 @@ section{
     border: 1px dashed black;
 }
 
-.debug ul li{
+.debug header ul li{
     display: inline-block;
     list-style: none;
 }
