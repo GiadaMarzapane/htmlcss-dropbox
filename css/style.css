@@ -45,20 +45,28 @@ nav .flex-container{
 }
 
 /* REGOLE MAIN */
-main section.zero{
+main section.zero-section{
     background-color: #b4d0e7;
     min-height: 500px;
     position: relative;
 }
 
-section.zero div.container1000{
+section.zero-section div.container1000{
     position: absolute;
     bottom: -40px;
     left: 50%;
     transform: translate(-50%);
 }
 
+section.one-section div.container800{
+    margin-top: 80px;
+}
 
+div.enterprise{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 30px;
+}
 
 /* REGOLE DEBUG */
 
@@ -77,5 +85,24 @@ section.zero div.container1000{
 .debug main section div.container1000{
     min-height: 400px;
     min-width: 1000px;
+    border: 1px dashed black;
+}
+
+.debug section.one-section div.container800{
+    border: 1px dashed black;
+    min-height: 800px;
+}
+
+.debug section.one-section div:first-of-type .flex-container{
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+div.column{
+    width: 250px;
+    border: 1px dashed black;
+}
+
+.debug div.enterprise{
     border: 1px dashed black;
 }
