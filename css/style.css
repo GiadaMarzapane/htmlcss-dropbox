@@ -1,0 +1,57 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container1200{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1000{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.width100{
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+}
+
+/* REGOLE HEADER */
+header{
+    height: 60px;
+    position: fixed;
+    z-index: 50;
+}
+header div.flex-container{
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .flex-container{
+    align-items: center;
+}
+
+/* REGOLE DEBUG */
+
+.debug header{
+    background-color: aqua;
+    border: 1px dashed black;
+}
+
+.debug ul li{
+    display: inline-block;
+    list-style: none;
+}
