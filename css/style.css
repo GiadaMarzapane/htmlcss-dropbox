@@ -20,12 +20,20 @@ body{
     margin: 0 auto;
 }
 
+.container500{
+    max-width: 500px;
+}
+
 .width100{
     width: 100%;
 }
 
 .flex-container{
     display: flex;
+}
+
+main section{
+    margin-bottom: 30px;
 }
 
 /* REGOLE HEADER */
@@ -62,6 +70,11 @@ section.one-section div.container800{
     margin-top: 80px;
 }
 
+div.column {
+    width: 250px;
+    min-height: 250px;
+}
+
 div.enterprise{
     width: 100%;
     min-height: 200px;
@@ -70,7 +83,6 @@ div.enterprise{
 
 section.two-section{
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 section.two-section div.clearfix div:first-child{
@@ -90,8 +102,24 @@ div.clearfix::after{
     content: '';
 }
 
-/* REGOLE DEBUG */
+section.three-section div.flex-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+section.three-section div.card{
+    min-width: 250px;
+    min-height: 250px;
+}
+
+
+
+/* REGOLE DEBUG */
+.container1000,
+.container800{
+    background-color: #ccc;
+    border: 1px dashed black;
+}
 /* debug header */
 .debug header{
     background-color: aqua;
@@ -120,13 +148,13 @@ div.clearfix::after{
     justify-content: space-between;
 }
 
-div.column{
-    width: 250px;
+.debug section.one-section div.column{
     border: 1px dashed black;
 }
 
 .debug div.enterprise{
     border: 1px dashed black;
+    background-color: aquamarine;
 }
 
 .debug section.two-section div.clearfix div:first-child{
@@ -134,5 +162,9 @@ div.column{
 }
 
 section.two-section div.clearfix div:last-child{
+    border: 1px dashed black;
+}
+
+.debug section.three-section div div.card{
     border: 1px dashed black;
 }
