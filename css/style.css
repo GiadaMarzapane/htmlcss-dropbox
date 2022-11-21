@@ -65,7 +65,7 @@ section.zero-section div.container1000{
     transform: translate(-50%);
 }
 
-section.one-section div.container800{
+section.one-section {
     margin-top: 80px;
 }
 
@@ -109,6 +109,7 @@ section.three-section div.flex-container{
 section.three-section div.card{
     min-width: 250px;
     min-height: 250px;
+    border: 1px dashed black;
 }
 
 section.five-section{
@@ -138,6 +139,11 @@ section.five-section div.five-section-top div.right{
 div.five-section-bottom.flex-container{
     margin: 50px auto;
     justify-content: space-between;
+}
+
+section.six-section div p,
+section.six-section div h2{
+    padding: 20px 0px;
 }
 
 /* REGOLE DEBUG */
