@@ -10,13 +10,13 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-.container1200{
-    max-width: 1200px;
+.container1000{
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.container1000{
-    max-width: 1000px;
+.container800 {
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -44,8 +44,25 @@ nav .flex-container{
     align-items: center;
 }
 
+/* REGOLE MAIN */
+main section.zero{
+    background-color: #b4d0e7;
+    min-height: 500px;
+    position: relative;
+}
+
+section.zero div.container1000{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
 /* REGOLE DEBUG */
 
+/* debug header */
 .debug header{
     background-color: aqua;
     border: 1px dashed black;
@@ -54,4 +71,11 @@ nav .flex-container{
 .debug ul li{
     display: inline-block;
     list-style: none;
+}
+
+/* debug main */
+.debug main section div.container1000{
+    min-height: 400px;
+    min-width: 1000px;
+    border: 1px dashed black;
 }
