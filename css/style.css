@@ -10,6 +10,9 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
+.width100{
+    width: 100%;
+}
 .container1000{
     max-width: 1000px;
     margin: 0 auto;
@@ -22,10 +25,6 @@ body{
 
 .container500{
     max-width: 500px;
-}
-
-.width100{
-    width: 100%;
 }
 
 .flex-container{
@@ -116,7 +115,8 @@ section.three-section div.card{
 
 /* REGOLE DEBUG */
 .container1000,
-.container800{
+.container800,
+.width100{
     background-color: #ccc;
     border: 1px dashed black;
 }
@@ -166,5 +166,9 @@ section.two-section div.clearfix div:last-child{
 }
 
 .debug section.three-section div div.card{
+    border: 1px dashed black;
+}
+
+.debug section.five-section > div{
     border: 1px dashed black;
 }
