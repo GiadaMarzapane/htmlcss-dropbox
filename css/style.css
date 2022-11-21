@@ -68,6 +68,28 @@ div.enterprise{
     margin-top: 30px;
 }
 
+section.two-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.two-section div.clearfix div:first-child{
+    width: 60%;
+    min-height: 250px;
+    float: left;
+}
+
+section.two-section div.clearfix div:last-child{
+    width: 40%;
+    min-height: 250px;
+    float: left;
+}
+div.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
 /* REGOLE DEBUG */
 
 /* debug header */
@@ -104,5 +126,13 @@ div.column{
 }
 
 .debug div.enterprise{
+    border: 1px dashed black;
+}
+
+.debug section.two-section div.clearfix div:first-child{
+    border: 1px dashed black;
+}
+
+section.two-section div.clearfix div:last-child{
     border: 1px dashed black;
 }
