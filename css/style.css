@@ -49,6 +49,9 @@ main section{
     max-width: 100%;
 }
 
+.img-width50{
+    max-width: 50%;
+}
 /* REGOLE HEADER */
 header{
     height: 60px;
@@ -216,9 +219,20 @@ section.five-section div.five-section-top div.right{
     height: calc(100vw / 6);
 }
 
+.card-brands-center{
+    overflow-y: auto;
+}
+
 div.five-section-bottom.flex-container{
     margin: 50px auto;
     justify-content: space-between;
+}
+
+div.five-section-bottom > div:first-child{
+    max-width: 55%;
+}
+div.five-section-bottom>div:last-child {
+        max-width: 45%;
 }
 
 section.six-section div p,
