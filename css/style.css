@@ -13,13 +13,14 @@ body{
 .width100{
     width: 100%;
 }
-.container1000{
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .container800 {
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.container600 {
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -35,11 +36,27 @@ main section{
     margin-bottom: 30px;
 }
 
+.button-link {
+    display: inline-block;
+    color: white;
+    background-color: #0061ff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.img-width100{
+    max-width: 100%;
+}
+
 /* REGOLE HEADER */
 header{
     height: 60px;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 50;
+    background-color: white;
 }
 header div.flex-container{
     height: 100%;
@@ -50,20 +67,83 @@ header div.flex-container{
 nav .flex-container{
     align-items: center;
 }
+nav > img{
+    padding: 0 10px;
+    scale: 0.8;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+}
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
 
 /* REGOLE MAIN */
+
+main section div.container800 {
+    min-height: 400px;
+    min-width: 800px;
+}
+
 main section.zero-section{
     background-color: #b4d0e7;
+    margin-top: 60px;
     min-height: 500px;
     position: relative;
 }
 
-section.zero-section div.container1000{
+section.zero-section div.container800{
     position: absolute;
-    bottom: -40px;
+    bottom: -30px;
     left: 50%;
     transform: translate(-50%);
 }
+
+section.zero-section div.clearfix div:first-child {
+    width: 40%;
+    min-height: 250px;
+    float: left;
+}
+
+section.zero-section div.clearfix div:last-child {
+    width: 60%;
+    min-height: 250px;
+    float: left;
+}
+
+div.clearfix::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.zero-section h1{
+    font-size: 3.5em;
+    padding-bottom: 25px;
+}
+.jumbo > p{
+    font-size: 0.8em;
+}
+.jumbo > *{
+    margin-bottom: 20px;
+}
+#arrow{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+}
+
 
 section.one-section {
     margin-top: 80px;
@@ -153,7 +233,7 @@ footer{
     padding: 40px 0px 20px 0;
 }
 
-footer div.container1000{
+footer div.container800{
     height: 350px;
     justify-content: space-between;
 }
@@ -163,32 +243,26 @@ footer ul{
 }
 
 /* REGOLE DEBUG */
-.container1000,
-.container800,
-.width100,
-section{
+.debug .container800,
+.debug .container600,
+.debug .width100,
+.debug section{
     background-color: #ccc;
     border: 1px dashed black;
 }
 /* debug header */
-.debug header{
+/* .debug header{
     background-color: aqua;
     border: 1px dashed black;
-}
+} */
 
-.debug header ul li{
-    display: inline-block;
-    list-style: none;
-}
 
 /* debug main */
-.debug main section div.container1000{
-    min-height: 400px;
-    min-width: 1000px;
+.debug main section div.container800{
     border: 1px dashed black;
 }
 
-.debug section.one-section div.container800{
+.debug section.one-section div.container600{
     border: 1px dashed black;
     min-height: 800px;
 }
