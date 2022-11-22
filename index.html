@@ -17,7 +17,7 @@
 
         <title>Dropbox</title>
     </head>
-    <body class="debug">
+    <body> <!--class="debug"-->
 
         <header class="width100">   <!--HEADER-->
             <div class="flex-container">
@@ -64,7 +64,7 @@
                             </p>
                             <a class="button-link" href="#">Inizia la tua prova gratuita</a>
                             <p>Annulla in qualsiasi momento</p>
-                            <a id="arrow" href="#">
+                            <a id="arrow" href="#FAQ">
                                 <i class="fa-solid fa-arrow-down"></i>
                             </a>
                         </div>
@@ -76,40 +76,46 @@
             </section>
 
             <section class="one-section">   <!--SEZIONE 1 / Trova il piano business-->
-                <div class="container600">
+                <div class="container700">
                     <h2>Trova il piano business che fa per te</h2>
-                    <div>
-                        <span>Fatturazione mensile</span>
-                        <span>Fatturazione annuale</span>   <!--Add Text-indent-->
+                    <div id="fatturazione">
+                        <div>
+                            <span id="radio-button-border" class="radio-button"></span>
+                            <span>Fatturazione mensile</span>
+                        </div>
+                        <div>
+                            <span class="radio-button"></span>
+                            <span>Fatturazione annuale</span>
+                        </div>
                     </div>
                     <div class="flex-container">
-                        <div class="column">
-                            <div>
+                        <div class="column border-gray">
+                            <div class="column-top border-bottom-gray">
                                 <i class="fa-solid fa-user"></i>
                                 <span>Singolo</span>
                             </div>
-                            <div>
+                            <div class="column-bottom">
                                 <h3>Professional</h3>
                                 <div>
-                                    <span>&euro; 12.00</span>
+                                    <span><strong>&euro; 12.00</strong></span>
                                     <br>
-                                    <span>/mese</span>
+                                    <span class="month">/mese</span>
                                 </div>
-                                <div>
-                                    <div>
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>1 utente</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <span>5 TB di spazio di archiviazione sicuro</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                <div class="column-block">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-user"></i> 1 utente
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura
+                                        </li>
+                                    </ul>
                                     <div>
                                         <a class="button-link" href="#">Prova gratis per 30 giorni</a>
+                                        <br>
                                         <span>oppure <a href="#">acquista ora</a></span>
                                     </div>
                                     <hr>
@@ -123,33 +129,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div>
-                                <i class="fa-solid fa-user"></i>
-                                <span>Singolo</span>
+                        <div class="column border-gray">
+                            <div class="column-top border-bottom-gray">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Team</span>
                             </div>
-                            <div>
-                                <h3>Professional</h3>
+                            <div class="column-bottom">
+                                <h3>Advanced</h3>
                                 <div>
-                                    <span>&euro; 12.00</span>
+                                    <span><strong>&euro; 18.00</strong></span>
                                     <br>
-                                    <span>/mese</span>
+                                    <span class="month">/utente/mese</span>
                                 </div>
-                                <div>
-                                    <div>
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>1 utente</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <span>5 TB di spazio di archiviazione sicuro</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                <div class="column-block">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-users"></i> 3 o più utenti
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e
+                                            sicura
+                                        </li>
+                                    </ul>
                                     <div>
                                         <a class="button-link" href="#">Prova gratis per 30 giorni</a>
+                                        <br>
                                         <span>oppure <a href="#">acquista ora</a></span>
                                     </div>
                                     <hr>
@@ -165,33 +172,35 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><div class="column">
-                            <div>
-                                <i class="fa-solid fa-user"></i>
-                                <span>Singolo</span>
+                        </div>
+                        <div class="column border-gray">
+                            <div class="column-top border-bottom-gray">
+                                <i class="fa-solid fa-building"></i>
+                                <span>Azienda</span>
                             </div>
-                            <div>
-                                <h3>Professional</h3>
+                            <div class="column-bottom">
+                                <h3>Enterprise</h3>
                                 <div>
-                                    <h6>&euro; 12.00</h6>
+                                    <span><strong>Contattaci</strong></span>
                                     <br>
-                                    <span>/mese</span>
+                                    <span class="month">-</span>
                                 </div>
-                                <div>
-                                    <div>
-                                        <i class="fa-solid fa-user"></i>
-                                        <span>1 utente</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-folder"></i>
-                                        <span>5 TB di spazio di archiviazione sicuro</span>
-                                    </div>
-                                    <div>
-                                        <i class="fa-solid fa-share-nodes"></i>
-                                        <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                <div class="column-block">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-user"></i> 10 o più utenti
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e
+                                            sicura
+                                        </li>
+                                    </ul>
                                     <div>
                                         <a class="button-link" href="#">Prova gratis per 30 giorni</a>
+                                        <br>
                                         <span>oppure <a href="#">acquista ora</a></span>
                                     </div>
                                     <hr>
@@ -207,18 +216,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="enterprise">
-                        <div>
+                    <div class="enterprise border-gray">
+                        <div class="column-bottom border-bottom-gray">
                             <i class="fa-solid fa-building"></i>
                             <span>Team</span>
                         </div>
-                        <div>
-                            <div>
+                        <div class="flex-container">
+                            <div class="column-left">
                                 <h3>Enterprise</h3>
-                                <h6>Contatta l'ufficio vendite per i prezzi</h6>
+                                <span><strong>Contatta l'ufficio vendite per i prezzi</strong></span>
                                 <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
                             </div>
-                            <div>
+                            <div class="column-right">
                                 <a class="button-link" href="#">Contatta l'ufficio vendite</a>
                             </div>
                         </div>
@@ -227,7 +236,7 @@
             </section>
 
             <section class="two-section">   <!--SEZIONE 2 / img con testo-->
-                <div class="container600 clearfix">
+                <div class="container700 clearfix">
                     <div>
                         <img class="img-width100" src="img/partner.png" alt="partner Dropbox">
                     </div>
@@ -242,7 +251,7 @@
             </section>
 
             <section class="three-section"> <!--SEZIONE 3 / card-->
-                <div class="container600">
+                <div class="container700">
                     <h2>Esegui più operazioni con Dropbox Business</h2>
                     <div class="flex-container">
                         <div class="card">
@@ -341,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="five-section-bottom container600 flex-container">
+                <div class="five-section-bottom container700 flex-container">
                     <div>
                         <h2>Porta Dropbox Business nella tua azienda.</h2>
                     </div>
@@ -351,8 +360,8 @@
                 </div>
             </section>
 
-            <section class="six-section">
-                <div class="container600">
+            <section id="FAQ" class="six-section">
+                <div class="container700">
                     <h2>Domande frequenti</h2>
                     <hr>
                     <p><strong>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</strong>
