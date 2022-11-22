@@ -187,7 +187,7 @@ section.three-section div.flex-container{
 }
 
 section.three-section div.card{
-    min-width: 250px;
+    max-width: 30%;
     min-height: 250px;
     border: 1px dashed black;
 }
