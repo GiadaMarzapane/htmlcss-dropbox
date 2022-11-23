@@ -444,15 +444,15 @@ section.six-section div .box-faq{
 .box-faq i{
     font-size: 10px;
 }
-.box-faq h6{
+.box-faq .clearfix h6{
     float: left;
 }
 
-.box-faq i {
+.box-faq .clearfix i {
     float: right;
 }
 
-.box-faq.clearfix::after{
+.box-faq .clearfix::after{
     content: '';
     clear: both;
     display: table;

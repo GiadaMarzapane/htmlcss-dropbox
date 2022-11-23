@@ -1,0 +1,21 @@
+.button-link:hover{
+    opacity: 0.7;
+}
+
+.box-faq p{
+    display: none;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+footer i.fa-chevron-down{
+    transition: transform 2s linear;
+}
+
+.box-faq:hover i.fa-chevron-down{
+    transform: rotate(180deg);
+}
+
+.box-faq:hover p{  
+    display: block;
+}
