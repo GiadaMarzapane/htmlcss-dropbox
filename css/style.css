@@ -461,8 +461,8 @@ section.six-section div .box-faq{
 /* FOOTER */
 footer{
     background-color: rgb(9, 9, 9);
-    min-height: calc(100vw / 3);
-    padding: 40px 0px 20px 0;
+    min-height: calc(100vw / 4);
+    padding-top: 40px;
     color: white;
 }
 
