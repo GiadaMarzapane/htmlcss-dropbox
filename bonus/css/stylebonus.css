@@ -10,16 +10,22 @@
     max-width: max-content;
     position: fixed;
     top: 60px;
+    transition: opacity 0.2s linear;
 }
 ul.menu-ul li{
     display: block;
     line-height: 35px;
+    padding: 0 10px;
 }
 .main-li:hover{
     background-color: blanchedalmond;
 }
 header nav ul li:hover .menu-tendina{
     opacity: 1;
+}
+
+.menu-ul li:not(li:first-child):hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
 /* BONUS FAQ */
