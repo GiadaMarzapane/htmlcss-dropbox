@@ -8,8 +8,8 @@
     padding-top: 10px;
 }
 
-footer i.fa-chevron-down{
-    transition: transform 2s linear;
+.box-faq i.fa-chevron-down{
+    transition: transform 0.3s linear;
 }
 
 .box-faq:hover i.fa-chevron-down{
