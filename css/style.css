@@ -7,7 +7,7 @@
 
 /* REGOLE GENERALI */
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -16,7 +16,8 @@ main p,
 main li,
 main a,
 main span,
-footer a{
+footer a,
+footer span{
     font-size: 12px;
 }
 
@@ -104,6 +105,12 @@ nav ul li a{
 
 /* REGOLE MAIN */
 
+h1{
+    font-weight: 800;
+    font-size: 3em;
+    padding-bottom: 25px;
+}
+
 main section div.container800 {
     min-height: 400px;
     min-width: 800px;
@@ -141,10 +148,6 @@ div.clearfix::after {
     content: '';
 }
 
-.zero-section h1{
-    font-size: 3.5em;
-    padding-bottom: 25px;
-}
 
 .jumbo > *{
     margin-bottom: 20px;
@@ -220,6 +223,7 @@ section.one-section {
 .column-block ul li {
     list-style: none;
     padding: 5px 0;
+    margin-left: 20px;
 }
 .column-block div ul li{
     padding: 5px 0;
@@ -312,7 +316,12 @@ section.three-section div.flex-container{
 section.three-section div.card{
     max-width: 30%;
     min-height: 250px;
-    font-size:x-small;
+    padding-bottom: 20px;
+}
+
+section.three-section div.card h3,
+section.three-section div.card p{
+    margin: 10px 0;
 }
 
 .three-section .container500{
@@ -477,6 +486,21 @@ footer ul li{
 footer ul li a{
     color: white;
     text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+#set-language{
+    margin-top: 70px;
+    border-top: 1px solid white;
+    padding-top: 30px;
+    color: gray;
+    font-size: 11px;
+}
+#set-language > *{
+    padding-right: 5px;
 }
 
 
