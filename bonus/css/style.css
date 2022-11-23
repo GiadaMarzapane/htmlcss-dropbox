@@ -73,33 +73,43 @@ header{
 }
 header div.flex-container{
     height: 100%;
-    align-items: center;
     justify-content: space-between;
 }
 
-nav .flex-container{
-    align-items: center;
+header div.flex-container{
+    height: 100%;
 }
-nav > img{
-    padding: 0 10px;
-    scale: 0.8;
+header nav{
+    height: 60px;
+}
+header ul{
+    height: 100%;
+}
+
+header img{
+    line-height: 60px;
+    vertical-align: middle;
 }
 
 header ul li {
     display: inline-block;
     list-style: none;
+    line-height: 60px;
+    vertical-align: middle;
 }
 nav ul li {
-    padding: 0 10px;
+    margin: 0 5px;
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
+    padding: 0 5px;
 }
 
 #inizia{
     padding: 5px 10px;
+    display: inline;
 }
 
 

@@ -2,6 +2,28 @@
     opacity: 0.7;
 }
 
+/* BONUS MENU A TENDINA */
+
+.menu-tendina{
+    opacity: 0;
+    background-color: blanchedalmond;
+    max-width: max-content;
+    position: fixed;
+    top: 60px;
+}
+ul.menu-ul li{
+    display: block;
+    line-height: 35px;
+}
+.main-li:hover{
+    background-color: blanchedalmond;
+}
+header nav ul li:hover .menu-tendina{
+    opacity: 1;
+}
+
+/* BONUS FAQ */
+
 .box-faq p{
     display: none;
     font-size: 12px;
