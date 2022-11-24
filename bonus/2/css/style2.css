@@ -12,13 +12,20 @@ body {
 
 
 header li,
-main p,
 main li,
 main a,
 main span,
 footer a,
 footer span {
     font-size: 14px;
+}
+
+main p{
+    font-size: 16px;
+}
+
+p{
+    line-height: 23px;
 }
 
 .margin-bottom15{
@@ -29,13 +36,17 @@ footer span {
     margin-bottom: 25px;
 }
 
+.padding30{
+    padding: 30px;
+}
+
 
 .width100 {
     width: 100%;
 }
 
-.container800 {
-    max-width: 800px;
+.container1200 {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -58,6 +69,16 @@ footer span {
     background-color: #0061ff;
     padding: 8px 10px;
     text-decoration: none;
+}
+
+.button-prova{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    border-bottom: 1.5px solid black;
+    margin-left: 20px;
 }
 
 .img-width100 {
@@ -182,6 +203,10 @@ main{
     margin-top: 120px;
 }
 
+section{
+    margin-bottom: 70px;
+}
+
 .section-bottom{
     padding-bottom: 50px;
 }
@@ -235,4 +260,55 @@ div.titolo2.flex-container{
 
 .section-bottom a{
     margin-left: 30px;
+}
+
+h2.forty{
+    font-size: 40px;
+}
+
+.section-img-text{
+    padding: 40px 0;
+}
+
+.section-img-text img{
+    height: 500px;
+}
+
+.funzionalità div:first-child{
+    background-color: #1e1919;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.funzionalità div.flex-container{
+    justify-content: space-between;
+    background-color: #f7f5f2;
+}
+
+.funzionalità div.flex-container div{
+    width: calc(100% / 4);
+    height: 350px;
+}
+
+#background{
+    background-image: url('../img/hero_creative@2x.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#background2{
+    background-image: url('../img/creatives-audience-illo.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.modal {
+    position: relative;
+}
+
+.funzionalità a{
+    position: absolute;
+    bottom: 20px;
 }
