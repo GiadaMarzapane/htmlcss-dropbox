@@ -1,0 +1,190 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header li,
+main p,
+main li,
+main a,
+main span,
+footer a,
+footer span {
+    font-size: 14px;
+}
+
+.margin-bottom15{
+    margin-bottom: 15px;
+}
+
+.margin-bottom25{
+    margin-bottom: 25px;
+}
+
+
+.width100 {
+    width: 100%;
+}
+
+.container800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container700 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container500 {
+    max-width: 500px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.button-link {
+    display: inline-block;
+    color: white;
+    background-color: #0061ff;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.img-width100 {
+    max-width: 100%;
+}
+
+.img-width50 {
+    max-width: 50%;
+}
+
+input{
+    font-family: 'Open Sans', FontAwesome, sans-serif;
+}
+
+/* REGOLE HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: white;
+}
+
+header div.flex-container {
+    height: 60px;
+    justify-content: space-between;
+}
+
+header div.flex-container {
+    height: 100%;
+}
+
+header nav {
+    height: 60px;
+}
+
+header ul {
+    height: 100%;
+}
+
+header img {
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+nav ul li {
+    /* margin: 0 5px; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+#inizia {
+    padding: 5px 10px;
+    display: inline;
+}
+
+.header-bottom-black{
+    height: 60px;
+    background-color: rgb(12, 12, 12);
+    z-index: 50;
+}
+.header-bottom-black nav{
+    margin-left: 35px;
+}
+
+.header-bottom-black.flex-container{
+    justify-content: space-between;
+    align-items: baseline;
+}
+.cerca input{
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100px;
+}
+
+.header-bottom-black li{
+    line-height: 59px;
+    border-bottom: 1px solid transparent;
+}
+
+.header-bottom-black a{
+    color: white;
+}
+
+.header-bottom-black li:hover{
+    border-bottom: 1px solid white;
+}
+
+/* REGOLE MAIN */
+main{
+    margin-top: 120px;
+}
+.sezione-uno{
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+.sezione-uno div.flex-container{
+    justify-content: center;
+}
+
+.collaborazione-creativa{
+    width: 60%;
+}
+
+.lavori-creativi{
+    width: 40%;
+}
+
+h1{
+    font-size: 3em;
+    line-height: 45px;
+}
+
+.titolo{
+    max-width: 80%;
+    margin: 30px 0 0 30px;
+}
